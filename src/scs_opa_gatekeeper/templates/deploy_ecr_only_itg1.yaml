@@ -1,0 +1,14 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: ContainerDenyRepo
+metadata:
+  name: containerdenyrepo
+spec:
+  match:
+    kinds:
+      - apiGroups: ["*"]
+        kinds: ["Deployment","DaemonSet","StatefulSet","Pod"]
+    namespaces:
+      - "itg1" # Proof of concept, à modifier
+  parameters:
+    repos:
+      - "746450792372.dkr.ecr.ca-central-1.amazonaws.com"

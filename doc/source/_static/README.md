@@ -1,0 +1,1 @@
+Ce répertoire contient des fichier tel que des .css pour bonifier le "thème html". Ne pas y placer d'images référencées.

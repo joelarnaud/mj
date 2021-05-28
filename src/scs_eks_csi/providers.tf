@@ -1,0 +1,5 @@
+###################
+# Provider section#
+####################
+provider "kubernetes" {
+}
